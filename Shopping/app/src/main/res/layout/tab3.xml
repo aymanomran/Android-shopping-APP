@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31c1b5"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#70e7e1"
+        >
+        <TextView
+            android:id="@+id/telllmequntitytxtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            />
+        <Button
+            android:id="@+id/makeordertxtID"
+            android:layout_alignParentRight="true"
+            android:text="Make Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/searchviewtxtID"
+            android:layout_width="wrap_content"
+            android:layout_weight=".75"
+            android:hint="Search"
+            android:background="@drawable/edittextstyle"
+            android:layout_height="30dp"/>
+        <Button
+            android:id="@+id/search_voice_btnID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voice"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/booklistviewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

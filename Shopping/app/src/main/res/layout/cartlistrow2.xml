@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/proNametxtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#fff"
+
+        />
+
+
+        <Spinner
+      android:id="@+id/QTSpID"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      />
+
+    </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+      <TextView
+          android:id="@+id/proPricetxtID"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#fff"
+          />
+
+      <Button
+          android:id="@+id/deleteItembtnId"
+          android:layout_width="wrap_content"
+          android:text="Delete"
+          android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+          />
+  </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a1.shopping.SignUp">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#70e7e1"
+
+        >
+        <TextView
+            android:textColor="#FFF"
+            android:text="SHOPPING"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight=".30"
+                android:text="Name" />
+            <EditText
+                android:id="@+id/nameEtID"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight=".70"
+                android:background="@drawable/edittextstyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="0.22"
+                android:text="User Name" />
+
+            <EditText
+                android:id="@+id/usernameEtID"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight=".70"
+                android:background="@drawable/edittextstyle"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="18dp"
+                android:layout_weight=".25"
+                />
+
+            <EditText
+                android:id="@+id/passwordEtID"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight=".70"
+                android:background="@drawable/edittextstyle"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Job"
+                android:layout_weight="0.37"
+                />
+            <EditText
+                android:id="@+id/JobEtID"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextstyle"
+                android:layout_weight=".75"
+                />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <TextView
+        android:text="Gender"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.48" />
+    <RadioButton
+        android:id="@+id/maleRbtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        />
+    <RadioButton
+        android:id="@+id/femaleRbtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Femal"
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BirthDate "
+                />
+            <TextView
+                android:id="@+id/birthdateId"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:text="What is your favorite hobby?" />
+
+        <EditText
+            android:id="@+id/answerEtID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="textEmailAddress" />
+        <Button
+    android:id="@+id/createnewbtnID"
+    android:text="Create New Account"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:onClick="CreateNewAccountFn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

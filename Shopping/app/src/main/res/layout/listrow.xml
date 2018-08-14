@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+    android:id="@+id/proNametxtID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="a"
+    android:textColor="#fff"
+    android:textSize="18dp"
+    />
+
+        <ToggleButton
+            android:id="@+id/buybtnID"
+            android:text="Buy"
+           android:layout_alignParentRight="true"
+            android:textOn="Undo"
+            android:textOff="Buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+      <TextView
+          android:id="@+id/proPricetxtID"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="b"
+          android:textColor="#fff"
+          />
+      <TextView
+          android:id="@+id/proQuantitytxtID"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="c"
+          android:textColor="#fff"
+          android:layout_marginLeft="40dp"
+          />
+
+  </LinearLayout>
+
+</LinearLayout>
